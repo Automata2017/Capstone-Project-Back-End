@@ -13,4 +13,6 @@ public class TicketService {
         this.ticketRepository = ticketRepository;
     }
 
+    public Ticket
+
 }
