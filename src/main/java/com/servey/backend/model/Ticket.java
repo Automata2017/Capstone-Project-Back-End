@@ -15,13 +15,13 @@ public class Ticket {
     private String fullName;
 
     @Column
-    private Long emailAddress;
+    private String emailAddress;
 
     @Column
     private Integer weekNumber;
 
     @Column
-    private Long lessonName;
+    private String lessonName;
 
     @Column
     private String studentComment;
@@ -48,11 +48,11 @@ public class Ticket {
         this.fullName = fullName;
     }
 
-    public Long getEmailAddress() {
+    public String getEmailAddress() {
         return emailAddress;
     }
 
-    public void setEmailAddress(Long emailAddress) {
+    public void setEmailAddress(String emailAddress) {
         this.emailAddress = emailAddress;
     }
 
@@ -64,11 +64,11 @@ public class Ticket {
         this.weekNumber = weekNumber;
     }
 
-    public Long getLessonName() {
+    public String getLessonName() {
         return lessonName;
     }
 
-    public void setLessonName(Long lessonName) {
+    public void setLessonName(String lessonName) {
         this.lessonName = lessonName;
     }
 

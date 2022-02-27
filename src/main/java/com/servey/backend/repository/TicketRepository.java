@@ -8,6 +8,5 @@ import java.util.List;
 
 @Repository
 public interface TicketRepository extends JpaRepository<Ticket, Long> {
-    Ticket findByFullNameAndEmailAddress(String fullName, Long emailAddress);
-    Ticket findById (long id);
+
 }
