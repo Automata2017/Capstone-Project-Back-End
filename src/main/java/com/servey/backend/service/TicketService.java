@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 
 @Service
@@ -23,6 +24,14 @@ public class TicketService {
 
     public List<Ticket> getAllTickets(){
         return ticketRepository.findAll();
+    }
+
+    public Optional<Ticket> getTicket(Long ticketId){
+
+        Optional<Ticket> ticket = ticketRepository.findById(ticketId);
+        if(ticket.isPresent()) {
+            return ticket;
+        }
     }
 
 

@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Optional;
 
 @RestController
 @RequestMapping(path = "/api")
@@ -27,12 +28,16 @@ public class TicketController {
         return ticketService.getAllTickets();
     }
 
+    @GetMapping("/tickets/{ticketId}/")
+    public Optional<Ticket> getTicket(@PathVariable(value = "ticketId") Long ticketId){
+        return ticketService.getTicket(ticketId);
+    }
+
     @PostMapping("/tickets/")
     public Ticket createTicket(@RequestBody Ticket ticketObject) {
         System.out.println();
         return ticketService.createTicket(ticketObject);
-
-
     }
+
 
 }
