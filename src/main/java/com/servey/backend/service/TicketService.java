@@ -1,5 +1,6 @@
 package com.servey.backend.service;
 
+import com.servey.backend.exceptions.TicketExceptions;
 import com.servey.backend.model.Ticket;
 import com.servey.backend.repository.TicketRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -31,6 +32,8 @@ public class TicketService {
         Optional<Ticket> ticket = ticketRepository.findById(ticketId);
         if(ticket.isPresent()) {
             return ticket;
+        }else{
+            throw new TicketExceptions("ticket does not exist");
         }
     }
 
