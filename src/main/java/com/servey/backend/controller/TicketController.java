@@ -11,4 +11,11 @@ public class TicketController {
 
     private TicketService ticketService;
 
+    @Autowired
+    public void setTicketService(TicketService ticketService){
+        this.ticketService = ticketService;
+    }
+
+    
+
 }
