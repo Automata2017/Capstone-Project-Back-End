@@ -10,6 +10,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping(path = "/api")
+@CrossOrigin(origins = "http://localhost:4200")
 public class TicketController {
 
     private TicketService ticketService;
