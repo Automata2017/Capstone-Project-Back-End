@@ -16,7 +16,16 @@ This project is about recreating a smaller version of the exit tickets given by 
 
 ### Entity Relationship Diagram (ERD):
 
-
+| Tickets |
+| --- | :--- |
+|ticket_id|INT|
+|full_name|STRING|
+|email_address||
+|week_number|INT|
+|lesson_name|STRING|
+|student_rating|STRING|
+|student_comment|INT|
+|student_recomendation|BOOLEAN|
 
 ### Endpoints
 
@@ -37,6 +46,15 @@ This project is about recreating a smaller version of the exit tickets given by 
 |As a student I want the severy submit button to not be available until all ansers are filled|
 |As a teacher I want to pull up the servey of my students to review them|
 
+### System Tools Used
+1. Postman
+2. IntelliJ IDEA 17
+3. Postgress
+4. Springboot
+5. LucidApp
+6. Visual Studio Code
+
 ### Project Challenges
+
 1. The first challenge in coding was figuring out what it was I needed in order to make the mini tickets functional.I later realized I was overcomplicating things as I would just need a basic single model to encompase the entire ticket as that's all you'd need to make it functional and efficient.
 2. The second was th POM dependencies, as there were several changes needed to be made in order to make the code work. And not all of which were taught in class. Thankfully, with the help of several other students, we managed to the dependencies needed.
