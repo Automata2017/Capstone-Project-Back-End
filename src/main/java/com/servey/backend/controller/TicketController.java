@@ -20,21 +20,21 @@ public class TicketController {
         this.ticketService = ticketService;
     }
 
-    @GetMapping("/hello-world/")
+    @GetMapping("/hello-world/") //Just a test to make sure the system works
     public String helloWorld() {return "Hello World";}
 
-    @GetMapping("/tickets/")
+    @GetMapping("/tickets/") //returns all the tickets posted on the database
     public List<Ticket> getAllTickets(){
         System.out.println("getting all tickets");
         return ticketService.getAllTickets();
     }
 
-    @GetMapping("/tickets/{ticketId}/")
+    @GetMapping("/tickets/{ticketId}/") //returns one specific ticket with a specific id number
     public Optional<Ticket> getTicket(@PathVariable(value = "ticketId") Long ticketId){
         return ticketService.getTicket(ticketId);
     }
 
-    @PostMapping("/tickets/")
+    @PostMapping("/tickets/") //creates and posts new tickets to the database
     public Ticket createTicket(@RequestBody Ticket ticketObject) {
         System.out.println();
         return ticketService.createTicket(ticketObject);
