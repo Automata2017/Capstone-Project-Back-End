@@ -6,9 +6,9 @@ import javax.persistence.*;
 @Table(name = "Ticket")
 public class Ticket {
 
-    @Id
-    @Column
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Id //makes the id value
+    @Column //creates new category for ticket
+    @GeneratedValue(strategy = GenerationType.IDENTITY) //automatically adds a new ID number unique to each ticket to identify them
     private Long id;
 
     @Column
@@ -31,6 +31,8 @@ public class Ticket {
 
     @Column
     private Boolean studentRecommendation;
+
+    //getters and setters for protecting your data on each variable
 
     public Long getId() {
         return id;

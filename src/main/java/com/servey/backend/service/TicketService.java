@@ -13,7 +13,7 @@ import java.util.Optional;
 @Service
 public class TicketService {
     private TicketRepository ticketRepository;
-
+//defines the programs with gets all, gets one, put
     @Autowired
     public void setTicketRepository(TicketRepository ticketRepository){
         this.ticketRepository = ticketRepository;
@@ -33,7 +33,7 @@ public class TicketService {
         if(ticket.isPresent()) {
             return ticket;
         }else{
-            throw new TicketExceptions("ticket does not exist");
+            throw new TicketExceptions("ticket does not exist"); //a response for if a ticket doesn't exist
         }
     }
 

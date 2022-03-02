@@ -8,5 +8,5 @@ import java.util.List;
 
 @Repository
 public interface TicketRepository extends JpaRepository<Ticket, Long> {
-
+//this is empty because there's no need for any basic instructions, only a way to hold data
 }
