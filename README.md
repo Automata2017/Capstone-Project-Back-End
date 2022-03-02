@@ -16,16 +16,16 @@ This project is about recreating a smaller version of the exit tickets given by 
 
 ### Entity Relationship Diagram (ERD):
 
-| Tickets |
+|Tickets | | 
 | --- | :--- |
-|ticket_id|INT|
-|full_name|STRING|
-|email_address|STRING|
-|week_number|INT|
-|lesson_name|STRING|
-|student_rating|STRING|
-|student_comment|INT|
-|student_recomendation|BOOLEAN|
+|ticket_id |INT |
+|full_name |STRING |
+|email_address |STRING |
+|week_number |INT |
+|lesson_name |STRING |
+|student_rating |STRING |
+|student_comment |INT |
+|student_recomendation |BOOLEAN |
 
 ### Endpoints
 
@@ -34,17 +34,17 @@ This project is about recreating a smaller version of the exit tickets given by 
 |GET/(website) |GET Homepage |Public |
 |GET tickets |GET all tickets |Public |
 |GET/tickets/(ticketId) |GET a single ticket ticket |Public |
-|POST tickets|POST new ticket|Public |
+|POST tickets |POST new ticket |Public |
 
 ### User Stories
 
-|:---|
-|As a student I want to type out answers for questions that ask me to type|
-|As a student I want to answer questions that ask for number between 1 and 10|
-|As a student I want to answer yes or no questions with a button|
-|As a student I want to submit my servey when completed for the teacher to see|
-|As a student I want the severy submit button to not be available until all ansers are filled|
-|As a teacher I want to pull up the servey of my students to review them|
+
+1. As a student I want to type out answers for questions that ask me to type
+2. As a student I want to answer questions that ask for number between 1 and 10
+3. As a student I want to answer yes or no questions with a button
+4. As a student I want to submit my servey when completed for the teacher to see
+5. As a student I want the severy submit button to not be available until all ansers are filled
+6. As a teacher I want to pull up the servey of my students to review them
 
 ### System Tools Used
 1. Postman
