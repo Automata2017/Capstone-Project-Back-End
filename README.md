@@ -11,7 +11,7 @@ This project is about recreating a smaller version of the exit tickets given by 
 ### Back End notes
 
 1. To create the back the back end, the first step is to create a new database called survey (incorrectly spelled servey by mistake) in postgres.
-2. the next step is to connect this survey using the application-dev.properties in the resources folder and congfigure it so it wall always automatically update when the app is running
+2. The next step is to connect this survey using the application-dev.properties in the resources folder and congfigure it so it wall always automatically update when the app is running
 3. After that, you need a defined relationship for the ticket. Since this application is only concerned with recieving and storing tickets, we'll be using a single model relationship.
 
 ### Entity Relationship Diagram (ERD):
@@ -20,7 +20,7 @@ This project is about recreating a smaller version of the exit tickets given by 
 | --- | :--- |
 |ticket_id|INT|
 |full_name|STRING|
-|email_address||
+|email_address|STRING|
 |week_number|INT|
 |lesson_name|STRING|
 |student_rating|STRING|
